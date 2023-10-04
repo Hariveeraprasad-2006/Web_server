@@ -1,6 +1,5 @@
 # Developing a Simple Webserver
 name: Hari veera prasad
-phn no: 98989898
 dept:AIML
 
 id:23009466
