@@ -66,7 +66,8 @@ httpd.serve_forever()
 ```
 
 # OUTPUT:
-![output](images/Screenshot%202023-10-18%20132710.png)
+![image](https://github.com/Hariveeraprasad-2006/Web_server/assets/145049988/4fd6a4ed-0205-44dc-8795-6163fd151d3b)
+
 # RESULT:
 
 The program is executed succesfully.
