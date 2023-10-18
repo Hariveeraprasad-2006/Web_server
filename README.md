@@ -1,9 +1,9 @@
 # Developing a Simple Webserver
-name: Hari veera prasad
+Name : Hari Veera Prasad
 
-dept:AIML
+ID : 23009466
 
-id:23009466
+ Dept : AIML 
 # AIM:
 
 Develop a webserver to display about top five web application development frameworks.
@@ -27,36 +27,46 @@ Implementation using Python code
 Serving the HTML pages.
 
 ## Step 5:
+
 Testing the webserver
 # PROGRAM:
+
 ```
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 content = """
 <html>
 <head>
-<body>
-<h1>Welcome</h1>
-</body>
 </head>
+<body>
+<h1>Top Five Web Application Development Frameworks</h1>
+
+<h1>1. Django</h1>
+<h1>2. MEAN Stack</h1>
+<h1>3. React</h1>
+<h1>4. Ruby on Rails</h1>
+<h1>5. Angular</h1>
+
+</body>
 </html>
 """
 
 class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        print("Get request recieved")
+        print("Get request received")
         self.send_response(200)
-        self.send_header('Content-type','text/html;charset=utf-8')
+        self.send_header('Content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
 
-print("This is my webserver")
-server_address = ('',80)
-httpd = HTTPServer(server_address,HelloHandler)
-httpd.serve.forever()
+print("This is my web server")
+server_address = ('', 80)
+httpd = HTTPServer(server_address, HelloHandler)
+httpd.serve_forever()
 ```
+
 # OUTPUT:
-![output](images/webserver1.png)
+![output](images/Screenshot%202023-10-18%20132710.png)
 # RESULT:
 
-The program is executed succesfully
+The program is executed succesfully.
